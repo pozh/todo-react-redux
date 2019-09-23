@@ -1,0 +1,16 @@
+@import "assets/styles/constants";
+
+.app {
+  padding: $spacer;
+
+  .card {
+    border: 0 none;
+  }
+
+  .card-header,
+  .card-footer {
+    background: $blue;
+    border-radius: $card-border-radius;
+    color: $white;
+  }
+}

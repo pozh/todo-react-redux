@@ -1,0 +1,46 @@
+@import "../../assets/styles/constants";
+
+.item {
+
+  &:hover {
+    background: $light;
+  }
+
+  &-selected {
+    background: $light-blue !important;
+  }
+
+  &__id {
+    width: 2.5rem;
+  }
+
+  &__task {
+    cursor: pointer;
+    max-height: 1.5rem;
+    max-width: 90px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    @include media-breakpoint-up(md) {
+      max-width: 240px;
+    }
+  }
+
+  &__owner {
+    cursor: pointer;
+  }
+}
+
+.item-done {
+  background: $light;
+
+  td {
+    text-decoration: line-through;
+  }
+
+  .item__task,
+  .item__owner {
+    color: $gray-500;
+  }
+}
